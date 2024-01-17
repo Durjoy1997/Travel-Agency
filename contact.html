@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Al Ikhlas Travels</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="contact.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+   
+    <script
+      src="https://kit.fontawesome.com/89f4ce03d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
+ <!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+ 
+
+  </head>
+  </head>
+  <body class="main-div">
+    <!-- First background photo box -->
+    <!-- TopBar -->
+
+    <div class="top-bar d-none d-md-block ">
+      <div class="container  mb-0  header mx-auto d-md-flex justify-content-between align-items-center">
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+             <div class="first-part-top"><i class="fa-solid fa-envelope header-icon"></i>
+              <sapan class="header-email">support@alikhlastravel.com</span></div>
+                <small class="for-line mx-3 "></small>
+            <div class="call">
+              <small href="/call" class="call">
+                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                +88 0174 494 1494
+              </small>
+            </div>
+                
+            
+        </div>
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+            <div class="2nd-part-topbar d-md-flex justify-content-between align-items-center">
+              <small class="for-line mx-3 h-50"></small>
+              <div class="dropdown">
+              <button class="btn border-0 btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-us me-1"></span> <span class="active-dd">English</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a id="english" onclick="handleLanguageSelect('english')" class="language dropdown-item active" href="#"><span class="flag-icon flag-icon-us me-1"></span> <span class="">English</span></a>
+                  </li>
+                  
+                  <li>
+                      <a id="french" onclick="handleLanguageSelect('french')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-fr me-1"></span> <span>French</span></a>
+                  </li>
+                  <li>
+                      <a id="spanich" onclick="handleLanguageSelect('spanich')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-es me-1"></span> <span>Spanich</span></a>
+                  </li>
+                  <li>
+                      <a id="arabic" onclick="handleLanguageSelect('arabic')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-sa me-1"></span> <span>Arabic</span></a>
+                  </li>
+              </ul>
+          </div>
+          <small class="for-line mx-3 h-50"></small>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f header-icon mx-1"></i>
+            <i class="fa-brands fa-twitter header-icon mx-1"></i>
+            <i class="fa-brands fa-google-plus header-icon mx-1"></i>
+            <i class="fa-brands fa-instagram header-icon mx-1"></i>
+            <i class="fa-brands fa-linkedin-in header-icon mx-1"></i>
+          </div>
+            </div>
+                
+            
+        </div>
+      </div>
+    </div>
+    
+    <!-- Nav bar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="" width="100px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item ms-3 active">
+                  <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/aboutus.html">About us</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <!-- <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Page 1</a>
+                    <a class="dropdown-item" href="#">Page 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Page 3</a>
+                  </div>
+                </li>
+                <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blogs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Blog 1</a>
+                    <a class="dropdown-item" href="#">Blog 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Blog 3</a>
+                  </div>
+                </li> -->
+                <li class="nav-item ms-3 ">
+                  <a class="nav-link selected-nav" href="/contact.html">Contacts
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </section>
+    <!-- About us section -->
+    <section>
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+        <div class="router container mt-3 mb-5"><a id="home-a" href="http://">Home</a> <span class="gallery-slash">/</span> <a href="" id="gallery-a">Contact Us</a></div>
+  
+         <div class="contact">
+            <div class="d-md-flex container justify-content-center ">
+                <div class="contact-text w-50 mx-2">
+                    <h2>CONTACT INFO</h2>
+                    <p>We had like to hear from you. Your opinion is valuable to us</p>
+                    <div class="address">
+                        <h4 class="address-head">ADDRESS</h4>
+                        <p>Configure Bepary Tower, Dhaka Bangladesh</p>
+                        <p class="email">info@travelagency.com</p>
+                        <h4 class="address-head">PHONE</h4>
+                        <p>+8801744941494</p>
+                        <p>+01638522264</p>
+                        <i class="fa-brands fa-facebook-f header-icon mx-1"></i>
+                        <i class="fa-brands fa-twitter header-icon mx-1"></i>
+                        <i class="fa-brands fa-google-plus header-icon mx-1"></i>
+                        <i class="fa-brands fa-instagram header-icon mx-1"></i>
+                        <i class="fa-brands fa-linkedin-in header-icon mx-1"></i>
+                    </div>
+                    
+                </div>
+                <div class="contact-form w-50 px-5">
+                    <h2>CONTACT FORM</h2>
+                    <form onsubmit="handleContactFormSubmit(event)">
+                        <input id="full-name"   type="text" class="input-group my-4  input-group-text" placeholder="Full Name">
+                        <input id="email" type="email" class="input-group my-4  input-group-text" placeholder="E-mail Address">
+                        <textarea id="message" type="text" class="input-group my-4  input-group-text" placeholder="Message"></textarea>
+                        <button class="send-btn px-4 py-2">Send Message</button>
+                        
+                    </form>
+                </div>
+            </div>
+         </div>
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="footer-distributed row">
+        <div class="footer-left col-md-3">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="">
+            <p class="footer-company-about">
+              Al Ikhlas Travel Agency is an unique travel assisting Agency to ensures all the needs of clients at a cheaper rate.  
+            </p>
+            <p class="footer-company-name">Read More  <i class="fa-solid fa-circle-right"></i></p>
+        </div>
+       <!--  <div class="footer-left-1">
+          
+        </div> -->
+        <div class="footer-center col-md-4">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Configur Bepary Tower</span> Dhaka, Bangladesh</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="email">contact@abcd.com</p>
+            </div>
+        </div>
+        <div class="footer-right col-md-3">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Al ikhlas travel agency provides all kinds of travel support like ticketing, travel packages, tour guide, hotel booking, boat or private vehicle booking. We serve you all types of travel supports as per clients need in one place. 
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bottom -->
+    <div class="bottom d-flex justify-content-center align-items-center">
+      <!-- <h2>Bottom bar</h2> -->
+      <p class="btm-text">copyright &copy; 2022 Traveller Agency | Privacy Policy | About Us | FAQ | Contact Support</p>
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      </script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1KOmohYeL4zktDVANK3L8K40Rx0YXNSs&callback=myMap"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!--  
+Daily Update: https://travel-agency-lnc.netlify.app/
+Navigation bar collapse problem solved, and other minor design issues fixed
+flights, cars, ships tab bar toggle is not implemented because it will be implemented while making this page dynamic by giving functionality.  
+ -->

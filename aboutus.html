@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Al Ikhlas Travels</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="contact.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+   
+    <script
+      src="https://kit.fontawesome.com/89f4ce03d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
+ <!--    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+ 
+
+  </head>
+  </head>
+  <body class="main-div">
+    <!-- First background photo box -->
+    <!-- TopBar -->
+    <div class="top-bar d-none d-md-block ">
+      <div class="container  mb-0  header mx-auto d-md-flex justify-content-between align-items-center">
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+             <div class="first-part-top"><i class="fa-solid fa-envelope header-icon"></i>
+              <sapan class="header-email">support@alikhlastravel.com</span></div>
+                <small class="for-line mx-3 "></small>
+            <div class="call">
+              <small href="/call" class="call">
+                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                +88 0174 494 1494
+              </small>
+            </div>
+                
+            
+        </div>
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+            <div class="2nd-part-topbar d-md-flex justify-content-between align-items-center">
+              <small class="for-line mx-3 h-50"></small>
+              <div class="dropdown">
+              <button class="btn border-0 btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-us me-1"></span> <span class="active-dd">English</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a id="english" onclick="handleLanguageSelect('english')" class="language dropdown-item active" href="#"><span class="flag-icon flag-icon-us me-1"></span> <span class="">English</span></a>
+                  </li>
+                  
+                  <li>
+                      <a id="french" onclick="handleLanguageSelect('french')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-fr me-1"></span> <span>French</span></a>
+                  </li>
+                  <li>
+                      <a id="spanich" onclick="handleLanguageSelect('spanich')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-es me-1"></span> <span>Spanich</span></a>
+                  </li>
+                  <li>
+                      <a id="arabic" onclick="handleLanguageSelect('arabic')" class="language dropdown-item" href="#"><span class="flag-icon flag-icon-sa me-1"></span> <span>Arabic</span></a>
+                  </li>
+              </ul>
+          </div>
+          <small class="for-line mx-3 h-50"></small>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f header-icon mx-1"></i>
+            <i class="fa-brands fa-twitter header-icon mx-1"></i>
+            <i class="fa-brands fa-google-plus header-icon mx-1"></i>
+            <i class="fa-brands fa-instagram header-icon mx-1"></i>
+            <i class="fa-brands fa-linkedin-in header-icon mx-1"></i>
+          </div>
+            </div>
+                
+            
+        </div>
+      </div>
+    </div>
+    
+    <!-- Nav bar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="" width="100px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item ms-3 active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link selected-nav" href="/aboutus.html">About us</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+               <!--  <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Page 1</a>
+                    <a class="dropdown-item" href="#">Page 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Page 3</a>
+                  </div>
+                </li>
+                <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blogs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Blog 1</a>
+                    <a class="dropdown-item" href="#">Blog 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Blog 3</a>
+                  </div>
+                </li> -->
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/contact.html">Contacts
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </section>
+    <!-- About us section -->
+    <section>
+        <img class="w-100"  src="https://i.ibb.co/1n1hjrD/flags.png" alt="">
+        <div class="router container mt-3 mb-5"><a id="home-a" href="http://">Home</a> <span class="gallery-slash">/</span> <a href="" id="gallery-a">About us</a></div>
+             <!-- Advertise 1 -->
+    <div class="advertise-1 container">
+      <h2 class="text-center my-4 title-3">WHY WE ARE THE BEST</h2>
+      <p class="best-p">By investing in technology that takes the friction out of travel, it seamlessly connects millions of travelers to memorable experiences, a variety of transportation options, and incredible places to stay – from homes to hotels, and much more. As one of the world’s largest travel marketplaces for both established brands and entrepreneurs of all sizes, it's enables properties around the world to reach a global audience and grow their businesses. At Together with Travelagency we do not believe in the word employee, everyone here is a team player, which is what makes the workplace so lively and full of energy. Together with Travelagency makes it easy and supports you with 24/7 customer support.</p>
+      <div class="best-1-grid row">
+        <div class="col-md-3">
+          <i class="fa-sharp fa-solid fa-truck-plane best-part-icon my-2"></i>
+          <h4>Amazing Travel</h4>
+          <p class="best-2-items">We ensures all type of security and safety on </p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-house-tsunami best-part-icon my-2"></i>
+          <h4>Discover</h4>
+          <p class="best-2-items">Discover unseen areas of our country by trecking with our experience tourist guide from hillside.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-flag best-part-icon my-2"></i>
+          <h4>Book Your Trip</h4>
+          <p class="best-2-items">Booking is super easy in our website, we can book or pay anytime from anywhere</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-regular fa-comments best-part-icon my-2"></i>
+          <h4>Nice Support</h4>
+          <p class="best-2-items">We have 24/7 customer support over phone as well as in online</p>
+        </div>
+      </div>
+    </div>
+    
+        <!-- offer section -->
+        <div class="our-offer py-4">
+          <div class=" container">
+            <div class="title-3 text-center">WHAT WE OFFER?</div>
+            <P class="best-p text-center">Promotions, deals and special offers for you.</P>
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="row container">
+                <div class="col-md-6 offer-lists">
+                  <li class="offer-list"><i class="fa-solid fa-circle-right bullet-arrow"></i> Low cost hotel in Dhaka </li>
+                  <li class="offer-list"><i class="fa-solid fa-circle-right bullet-arrow"></i> Hotel booking Cox's Bazar </li>
+                  <li class="offer-list"><i class="fa-solid fa-circle-right bullet-arrow"></i> Best hotel booking sites for families and groups</li>
+                  <li class="offer-list"><i class="fa-solid fa-circle-right bullet-arrow"></i> Best Kashmir package from Dhaka</li>
+                  <li class="offer-list"><i class="fa-solid fa-circle-right bullet-arrow"></i> Kathmundu tour package from Dhaka</li>
+                </div>
+                <div class="plain-text col-md-6 offer-lists">
+                  Great Packages & Discounts on Stays. Deals on Unsold Rooms! Quick, Easy Booking, Book Now,Search and Book Hotels Near You Now. Book your Hotel in Cox's Bazar online. No reservation costs. Great rates. Best Price Guarantee. Motels. Hostels. Secure Booking. Bed and Breakfasts. Get Instant Confirmation. Read Real Guest Reviews. We speak your language. 60% Off Last Minute Hotel Deals in Dhaka.Top Locations & Free Upgrades. Unsold Hotel Room From $22/Night. 4-Star At 2-Star Prices. Great Packages & Discounts on Hotels.
+                </div>
+            </div>
+            </div>
+    
+     
+       <div class="about-progress mt-4">
+        <div class="container"> <h2 class="text-center">ABOUT OUR COMPANY</h2>
+            <P class="best-p text-center">Founded in 2022 in Dhaka, Bangladesh. Together with Travelagency, One of the best online travel aggregator of Bangladesh is leading and revolutionizing this industry. Together with Travelagency’s mission is to make it easier for everyone to experience the world. By investing in technology that takes the friction out of travel, it seamlessly connects millions of travelers to memorable experiences, a variety of transportation options, and incredible places to stay – from homes to hotels, and much more. As one of the world’s largest travel marketplaces for both established brands and entrepreneurs of all sizes, it's enables properties around the world to reach a global audience and grow their businesses. At Together with Travelagency we do not believe in the word employee, everyone here is a team player, which is what makes the workplace so lively and full of energy. Together with Travelagency makes it easy and supports you with 24/7 customer support.</P>
+        </div>
+       
+      <div class="d-md-flex justify-content-around align-items-center container">
+        <div class="mt-3"><img class="cus-img img-fluid px-5" src="https://i.ibb.co/8YPM0pM/t4.png" alt=""></div>
+        <div class="mt-3 w-75 p-md-0 px-sm-4">
+          <h3>Travel Agency</h3>
+          <P>If you do not fall on any of the above category, why don’t you apply to join our family? Trust us, You are going to our History.</P>
+          <small>Flights</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+          <small>Hotels</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width:95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+          </div>
+          <small>Cars</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+          <small>Cruises</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">93%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="advertise-1">
+        <div class=" container">
+            <h3 class="text-center my-4 title-3">OUR TEAM</h3>
+            <p class="best-p">At Together with Travelagency we do not believe in the word employee, everyone here is a team player, which is what makes the workplace so lively and full of energy. Together with Travelagency makes it easy and supports you with 24/7 customer support.</p>
+            <div class="best-2-grid row">
+              <div class="col-md-3">
+                <img class="img-fluid p-3" src="https://i.ibb.co/G3Pz6Qq/p1.png" alt="">
+                <h5>Abdullah Nomani</h5>
+                <p class="best-2-items">CEO & Founder</p>
+                <i class="mx-1 text-secondary  fa fa-facebook"></i><i class="mx-1 text-secondary fa fa-twitter"></i><i class="mx-1 text-secondary fa fa-linkedin"></i><i class="mx-1 text-secondary fa fa-github"></i>
+              </div>
+              <div class="col-md-3">
+                <img class="img-fluid p-3" src="https://i.ibb.co/w4gz0qn/p2.png" alt="">
+                <h5>Brandon Stark</h5>
+                <p class="best-2-items">Managing Director</p>
+                <i class="mx-1 text-secondary  fa fa-facebook"></i><i class="mx-1 text-secondary fa fa-twitter"></i><i class="mx-1 text-secondary fa fa-linkedin"></i><i class="mx-1 text-secondary fa fa-github"></i>
+              </div>
+              <div class="col-md-3">
+                <img class="img-fluid p-3" src="https://i.ibb.co/NpTzkgx/p3.png" alt="">
+                <h5>Amanda Astoun</h5>
+                <p class="best-2-items">Planning Manager</p>
+                <i class="mx-1 text-secondary  fa fa-facebook"></i><i class="mx-1 text-secondary fa fa-twitter"></i><i class="mx-1 text-secondary fa fa-linkedin"></i><i class="mx-1 text-secondary fa fa-github"></i>
+              </div>
+              <div class="col-md-3">
+                <img class="img-fluid p-3" src="https://i.ibb.co/dmrzYK6/p4.png" alt="">
+                <h5>Bill Amedues</h5>
+                <p class="best-2-items">Human Resource</p>
+                <i class="mx-1 text-secondary  fa fa-facebook"></i><i class="mx-1 text-secondary fa fa-twitter"></i><i class="mx-1 text-secondary fa fa-linkedin"></i><i class="mx-1 text-secondary fa fa-github"></i>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="footer-distributed row">
+        <div class="footer-left col-md-3">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="">
+            <p class="footer-company-about">
+              Al Ikhlas Travel Agency is an unique travel assisting Agency to ensures all the needs of clients at a cheaper rate.  
+                          </p>
+            <p class="footer-company-name">Read More  <i class="fa-solid fa-circle-right"></i></p>
+        </div>
+       <!--  <div class="footer-left-1">
+          
+        </div> -->
+        <div class="footer-center col-md-4">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Configure Bepary Tower</span> Dhaka, Bangladesh</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+880 163 852 2264</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="email">contact@alikhlas.com</p>
+            </div>
+        </div>
+        <div class="footer-right col-md-3">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Al ikhlas travel agency provides all kinds of travel support like ticketing, travel packages, tour guide, hotel booking, boat or private vehicle booking.  
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bottom -->
+    <div class="bottom d-flex justify-content-center align-items-center">
+      <!-- <h2>Bottom bar</h2> -->
+      <p class="btm-text">copyright &copy; 2022 Traveller Agency | Privacy Policy | About Us | FAQ | Contact Support</p>
+    </div>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+  </body>
+</html>

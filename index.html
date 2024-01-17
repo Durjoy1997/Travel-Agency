@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Al Ikhlas Travels</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="contact.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+   
+    <script
+      src="https://kit.fontawesome.com/89f4ce03d4.js"
+      crossorigin="anonymous"
+    ></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+ 
+
+  </head>
+  </head>
+  <body class="main-div">
+    
+    <div class="top-bar d-none d-md-block ">
+      <div class="container  mb-0  header mx-auto d-md-flex justify-content-between align-items-center">
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+            <div class="first-part-top"><i class="fa-solid fa-envelope header-icon"></i>
+              <sapan class="header-email">support@alikhlastravel.com</span></div>
+                <small class="for-line mx-3 "></small>
+            <div class="call">
+              <small href="/call" class="call">
+                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                +88 0174 494 1494
+              </small>
+            </div>
+                
+            
+        </div>
+        <div class="email d-md-flex">
+          <!-- 
+             -->
+            <div class="2nd-part-topbar d-md-flex justify-content-between align-items-center">
+              <small class="for-line mx-3 h-50"></small>
+              <div class="dropdown">
+              <button class="btn border-0 btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-us me-1"></span> <span class="active-dd">English</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a id="english" onclick="handleLanguageSelect('english')" class="language dropdown-item active" ><span class="flag-icon flag-icon-us me-1"></span> <span class="">English</span></a>
+                  </li>
+                  
+                  <li>
+                      <a id="french" onclick="handleLanguageSelect('french')" class="language dropdown-item" ><span class="flag-icon flag-icon-fr me-1"></span> <span>French</span></a>
+                  </li>
+                  <li>
+                      <a id="spanich" onclick="handleLanguageSelect('spanich')" class="language dropdown-item" ><span class="flag-icon flag-icon-es me-1"></span> <span>Spanich</span></a>
+                  </li>
+                  <li>
+                      <a id="arabic" onclick="handleLanguageSelect('arabic')" class="language dropdown-item" ><span class="flag-icon flag-icon-sa me-1"></span> <span>Arabic</span></a>
+                  </li>
+              </ul>
+          </div>
+          <small class="for-line mx-3 h-50"></small>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f header-icon mx-1"></i>
+            <i class="fa-brands fa-twitter header-icon mx-1"></i>
+            <i class="fa-brands fa-google-plus header-icon mx-1"></i>
+            <i class="fa-brands fa-instagram header-icon mx-1"></i>
+            <i class="fa-brands fa-linkedin-in header-icon mx-1"></i>
+          </div>
+            </div>
+                
+            
+        </div>
+      </div>
+    </div>
+    
+    <!-- Nav bar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="" width="100px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item ms-3 active">
+                  <a class="nav-link selected-nav" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/aboutus.html">About us</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <!-- <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" >Page 1</a>
+                    <a class="dropdown-item" >Page 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Page 3</a>
+                  </div>
+                </li>
+                <li class="nav-item ms-3 dropdown">
+                  <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blogs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" >Blog 1</a>
+                    <a class="dropdown-item" >Blog 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" >Blog 3</a>
+                  </div>
+                </li> -->
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="/contact.html">Contacts
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </section>
+    <!-- First background photo box -->
+    <div class="first-banner">
+    <!-- TopBar -->
+
+<!-- Banner -->
+    <div class="banner">
+      <div class="writing-part container">
+      <h2 class="banner-subtitle banner-text ">5 Days In</h2> <br>
+      <div class="banner-title banner-text mx-auto my-0"><h1 class=" fw-bold">Cox's bazar (World's Largest Beach)</h1></div> <br>
+      <p class="banner-p banner-text mt-2">We provide the most laxurious trip to our sea queen Cox's bazar with 100% client satisfaction at a reasonable price</p>
+      
+    </div></div>
+    
+    <div class="container booking-bar ps-0">
+      <div class="vehicle-route ">
+        <ul class='vehicle-list d-flex align-items-start justify-content-start m-0 p-0'>
+          <li id="flights" onclick="handleOnClick('flights')" class="px-3 py-2  list-item selected"><i class="fa-solid fa-plane-departure"></i> Flights</li>
+          <li id="hotels" onclick="handleOnClick('hotels')" class="px-3 py-2  list-item"><i class="fa-solid fa-hotel"></i> Hotels</li>
+          
+          <li id="cars" onclick="handleOnClick('cars')" class="px-3 py-2  list-item"><i class="fa-solid fa-car"></i> Cars</li>
+          <li id="cruises" onclick="handleOnClick('cruises')" class="px-3 py-2  list-item"><i class="fa-solid fa-ship"></i> Cruises</li>
+        </ul>
+        <div id="flights-form" class="d-none tour-form  row px-2 ms-0 py-4">
+          <div class="col-md-2">
+            <p class="form-item fs-6">Flying from:</p>
+            <div class="dropdown form-dropdown ">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <span class="active-dd1 placeholder-form">City or Airport</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="dhaka">Dhaka</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Kolkata</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Venice</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Dubai</span></a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-2"><p class="form-item fs-6">To:</p>
+            <div class="dropdown form-dropdown">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="active-dd1 placeholder-form">City or Airport</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="ny">New York</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>London</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Berlin</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Arabic</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2"><p class="form-item fs-6">Departing:</p>
+            <form>
+              <div class="row form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="depart" type="date" class="p-2 date-input placeholder-form" />
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+          <div class="col-md-2"><p class="form-item fs-6">Returning:</p>
+            <form>
+              <div class="row form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="return" type="date" class="p-2 date-input placeholder-form" />
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+
+           <div class="col-md-1"><p class="form-item fs-6">Adult:</p>
+            <div class="dropdown form-dropdown  p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span>1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+           <div class="col-md-1"><p class="form-item fs-6">Child:</p>
+            <div class="dropdown form-dropdown p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span class="number-1">1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2 search-div">
+            <br class="mt-4"/>
+            <button onclick="handleSearchRoute()" class="search-button px-5 py-2">SEARCH</button>
+          </div>
+        </div>
+        <div id="hotels-form" class="d-none tour-form  row px-2 ms-0 py-4">
+          <div class="col-md-2">
+            <p class="form-item fs-6">Arriving From:</p>
+            <div class="dropdown form-dropdown ">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <span class="active-dd1 placeholder-form">City or Country</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="dhaka">Dhaka</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Kolkata</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Venice</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Dubai</span></a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-2"><p class="form-item fs-6">Accomodation:</p>
+            <div class="dropdown form-dropdown">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="active-dd1 placeholder-form">Room Type</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="ny">VIP</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Luxary</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Family</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Double Bed</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2"><p class="form-item fs-6">Check In:</p>
+            <form>
+              <div class="row form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="depart" type="date" class="p-2 date-input placeholder-form" />
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+          <div class="col-md-2"><p class="form-item fs-6">Check Out:</p>
+            <form>
+              <div class="row form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="return" type="date" class="p-2 date-input placeholder-form" />
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+
+           <div class="col-md-1"><p class="form-item fs-6">Adult:</p>
+            <div class="dropdown form-dropdown  p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span>1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+           <div class="col-md-1"><p class="form-item fs-6">Child:</p>
+            <div class="dropdown form-dropdown p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span class="number-1">1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2 search-div">
+            <br class="mt-4"/>
+            <button onclick="handleSearchRoute()" class="search-button px-5 py-2">SEARCH</button>
+          </div>
+        </div>
+        <div id="cars-form" class="d-none tour-form  row px-2 ms-0 py-4">
+          <div class="col-md-2">
+            <p class="form-item fs-6">Starting Point:</p>
+            <div class="dropdown form-dropdown ">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <span class="active-dd1 placeholder-form">Starting Point</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="dhaka">Dhaka</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Kolkata</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Venice</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Dubai</span></a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-2"><p class="form-item fs-6">Hours of rent:</p>
+            <div class="dropdown form-dropdown">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="active-dd1 placeholder-form">Hours</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="ny">2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>6</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>10</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>24</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2"><p class="form-item fs-6">Date:</p>
+            <form>
+              <div class="row form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="depart" type="date" class="p-2 date-input placeholder-form" />
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+   
+
+           <div class="col-md-2"><p class="form-item fs-6">Car Type:</p>
+            <div class="dropdown form-dropdown  p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">Car Capacity</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span>4 seater</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>7 Seater</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>13 Seater</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>20 Seater</span></a>
+                  </li>
+              </ul>
+          </div></div>
+           <div class="col-md-2"><p class="form-item fs-6">Car quality:</p>
+            <div class="dropdown form-dropdown p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">Regular</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span class="number-1">Regular</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Premium</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Luxary</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Economy</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2 search-div">
+            <br class="mt-4"/>
+            <button onclick="handleSearchRoute()" class="search-button px-5 py-2">SEARCH</button>
+          </div>
+        </div>
+        <div id="cruises-form" class="d-none tour-form  row px-2 ms-0 py-4">
+          <div class="col-md-3">
+            <p class="form-item fs-6">Starting From:</p>
+            <div class="dropdown form-dropdown ">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <span class="active-dd1 placeholder-form">Port</span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="dhaka">Dhaka</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Barishal</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Patuakhali</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Kuakata</span></a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-3"><p class="form-item fs-6">Destination:</p>
+            <div class="dropdown form-dropdown">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="active-dd1 placeholder-form">Port</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span id="ny">Chittagong</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Mongla</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Payra</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>Potenga</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2"><p class="form-item fs-6">Start Date:</p>
+            <form>
+              <div class="form-group">
+                <div class="">
+                  <div class="input-group date" id="datepicker">
+                    <input id="depart" type="date" class="p-2 date-input placeholder-form" />
+                  </div>
+                </div>
+              </div>
+            </form>
+           </div>
+    
+
+           <div class="col-md-1"><p class="form-item fs-6">Adult:</p>
+            <div class="dropdown form-dropdown  p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span>1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+           <div class="col-md-1"><p class="form-item fs-6">Child:</p>
+            <div class="dropdown form-dropdown p-0">
+              <button class="btn border-0 btn-md dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="">1</span> </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                      <a class="dropdown-item active" > <span class="number-1">1</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>2</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>3</span></a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" ><span>4</span></a>
+                  </li>
+              </ul>
+          </div></div>
+          <div class="col-md-2 search-div">
+            <br class="mt-4"/>
+            <button onclick="handleSearchRoute()" class="search-button px-5 py-2">SEARCH</button>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+    <!-- Advertise 1 -->
+    <div class="advertise-1">
+    <div class=" container">
+      <h2 class="text-center mt-4 title-2 mb-2">WHY WE ARE THE BEST</h2>
+      <p class="best-p mx-5 px-5">We provide service as per customer demand. You can customize your own trip. So you will only pay what you avail. No extra charge, you can add or delete anything from the packages </p>
+      <div class="best-1-grid row">
+        <div class="col-md-3">
+          <i class="fa-sharp fa-solid fa-truck-plane best-part-icon my-2"></i>
+          <h4>Amazing Travel</h4>
+          <p class="best-1-items">Always thinks about travellers comfort zone first.</p> <p class="best-1-read">Read More</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-house-tsunami best-part-icon my-2"></i>
+          <h4>Discover</h4>
+          <p class="best-1-items">Our trecking packages helps you to find the unseen beauty of the country.</p> <p class="best-1-read">Read More</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-flag best-part-icon my-2"></i>
+          <h4>Book Your Trip</h4>
+          <p class="best-1-items">Booking is fully automated and hassel free, so book now.</p> <p class="best-1-read">Read More</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-regular fa-comments best-part-icon my-2"></i>
+          <h4>Nice Support</h4>
+          <p class="best-1-items">We have 24 hours support in 7 days in a week including all holidays?</p> <p class="best-1-read">Read More</p>
+        </div>
+      </div>
+    </div></div>
+    <!-- Vacation package  -->
+    <div class="vacation-package-add d-md-flex align-items-center justify-content-center mt-4 " >
+  
+      <div class="row text-align-center justify-content-center container">
+        <div class="third-part-text col-md-9 text-align-center justify-content-center ">
+<h3>Hill Track Full Package</h3>
+            <p class="third-text-p ">We have our most premium packages to explore the hillside of Bangladesh it includes the three most beautiful districst Rangamati, Bandarban and Khagrachori. The incredible roads on mountain and water falls will blow your mind</p>
+            <p><span id="khazbegi">From: Dhaka (Bangladesh) </span> <span id="dollar">$159.00</span> person</p>  
+        </div>
+        <div class="third-part-btn col-md-3 d-flex align-items-center justify-content-center ">
+          <button onclick="handleDetailsClick()" class="px-5 py-2">Details</button>
+        </div>
+      </div>
+    
+    </div>
+    <!-- Cruises Part -->
+    <!-- https://i.ibb.co/nMHt9DL/bandarban.jpg
+https://i.ibb.co/ScbL6pD/sylhet.jpg
+https://i.ibb.co/Ks6VtsQ/cox.jpg -->
+    <div class="cruises-home container" >
+      <h1 class="text-center mt-4 title-2">POPULAR PACKAGES</h1>
+      <p class="best-p mx-5 px-5">We ensure Cost effective, safe and comfortable tour experience to all our customers</p>
+      <div class="d-md-flex align-content-center justify-content-between">
+        <div class=" ship-card pb-2 mx-2">
+          <img src="https://i.ibb.co/nMHt9DL/bandarban.jpg" class="img-fluid" alt="" height="">
+          <div class="container pb-2">         
+          <h3 class="d-inline-block">Bandarban </h3>
+          <p  class="d-inline-block tour-duration"> 7 Night Tour</p>
+          <p class="tour-summary">Nafakhum, Amiokhum, Remakri, Nilgiri, Boga Lake,  Debota Khum </p>
+          <i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-regular fa-star stars"></i> <span class="review-number">-16 Reviews</span> <button onclick="handleSeeAllTours('Greece')" class=" btn-text">SEE ALL</button>
+</div>
+        </div>
+        <div class=" ship-card pb-2 mx-2">
+          <img src="https://i.ibb.co/ScbL6pD/sylhet.jpg" class="img-fluid" alt="">
+          <div class="container pb-2">          
+          <h3 class="d-inline-block">Sylhet </h3>
+          <p  class="d-inline-block tour-duration"> 7 Night Tour</p>
+          <p class="tour-summary">Tea states,Swamp Forest, Bisana kandi, Shada pathor, Jaaflong</p>
+          <i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-regular fa-star stars"></i> <span class="review-number">-16 Reviews</span> <button onclick="handleSeeAllTours('Greece')" class=" btn-text">SEE ALL</button>
+</div>
+        </div>
+        <div class=" ship-card pb-2 mx-2">
+          <img src="https://i.ibb.co/Ks6VtsQ/cox.jpg" class="img-fluid" alt="">
+          <div class="container pb-2">         
+          <h3 class="d-inline-block">Cox's Bazar </h3>
+          <p  class="d-inline-block tour-duration"> 8 Night Tour</p>
+          <p class="tour-summary">Cox's Bazar, Saint Martin, Inani, Marine Drive, Himchori, Coral Beach</p>
+          <i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-solid fa-star stars"></i><i class="fa-regular fa-star stars"></i> <span class="review-number">-16 Reviews</span> <button onclick="handleSeeAllTours('Greece')" class=" btn-text">SEE ALL</button>
+</div>
+        </div>
+      </div>
+    </div>
+    <!-- Happy Customers -->
+    <div class="happy-customers mt-5">
+      <div class="d-md-flex justify-content-around align-items-center container happy-items">
+        <div class=""><img class="cus-img" src="https://i.ibb.co/JRtpTDM/cus.png" alt=""></div>
+        <div class="">
+          <h1>HAPPY CUSTOMERS</h1>
+          <P>Our customers are very happpy with our services. Here are a glance of our client satisfaction rate</P>
+          <small>Flights</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+          <small>Hotels</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">93%</div>
+          </div>
+          <small>Cruises</small>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Logo Part -->
+    <div class="home-logo">
+      <div class="d-md-flex align-items-center justify-content-between container my-4">
+        <img class="image-logo img-fluid" src="https://i.ibb.co/S5HKrpH/c1.png" alt="" style="filter: grayscale(100%);;"><img class="image-logo img-fluid" src="https://i.ibb.co/wrZVQbK/c2.png" alt="" style="filter: grayscale(100%);"><img class="image-logo img-fluid" src="https://i.ibb.co/j8376BF/c3.png" alt="" style="filter: grayscale(100%);;"><img class="image-logo img-fluid" src="https://i.ibb.co/MZDG7Qj/c4.png" alt="" style="filter: grayscale(100%);;"><img class="image-logo img-fluid" src="https://i.ibb.co/dfKhwV3/c5.png" alt="" style="filter: grayscale(100%);;"><img class="image-logo img-fluid" src="https://i.ibb.co/qx9VLDX/c6.png" alt="" style="filter: grayscale(100%);;">
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="footer-distributed row">
+        <div class="footer-left col-md-3">
+            <img src="https://i.ibb.co/k1x0rVQ/logo.png" alt="">
+            <p class="footer-company-about">
+              Al Ikhlas Travel Agency is an unique travel assisting Agency to ensures all the needs of clients at a cheaper rate.  
+                          </p>
+            <p class="footer-company-name">Read More  <i class="fa-solid fa-circle-right"></i></p>
+        </div>
+       <!--  <div class="footer-left-1">
+          
+        </div> -->
+        <div class="footer-center col-md-4">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>21 Revolution Street</span> Dhaka, Bangladesh</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p class="email">contact@abcd.com</p>
+            </div>
+        </div>
+        <div class="footer-right col-md-3">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Al ikhlas travel agency provides all kinds of travel support like ticketing, travel packages, tour guide, hotel booking, boat or private vehicle booking. We serve you all types of travel supports as per clients need in one place. 
+            </p>
+            <div class="footer-icons">
+                <a ><i class="fa fa-facebook"></i></a>
+                <a ><i class="fa fa-twitter"></i></a>
+                <a ><i class="fa fa-linkedin"></i></a>
+                <a ><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bottom -->
+    <div class="bottom d-flex justify-content-center align-items-center">
+      <!-- <h2>Bottom bar</h2> -->
+      <p class="btm-text">copyright &copy; 2022 Traveller Agency | Privacy Policy | About Us | FAQ | Contact Support</p>
+    </div>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+     
+  </body>
+</html>

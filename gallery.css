@@ -1,0 +1,27 @@
+#home-a{
+    color:#08a89d;
+    text-decoration: none;
+}
+.gallery-slash{
+    color: #7b7b7b;
+}
+#gallery-a{
+    color: #7b7b7b;
+    text-decoration: none;
+}
+.route-li{
+    text-decoration: none;
+    color: #7b7b7b;
+    cursor: pointer;
+}
+.active-route{
+    color: white;
+    background-color: #08a89d;
+    text-decoration: none;
+}
+.img-row{
+    /* max-height: 700px; */
+}
+.one-img{
+    width: 30em;
+}

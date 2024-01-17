@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap');
+.main-div{
+    margin: 0;
+}
+/* Header part style */
+body{
+    margin: 0;
+    padding: 0; 
+    /* font-family: 'Poppins', sans-serif; */
+}
+.selected-nav, .selected-nav:hover{
+    color: #8bdbd7;
+    font-weight: bold;
+    border-bottom: 2px solid #8bdbd7;
+}
+.top-bar{
+    text-decoration: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #fafafa;
+
+    border-top: 3px solid #1cbbb4;
+}
+.header-email{
+    text-decoration: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 1em;
+}
+.header-icon{
+    text-decoration: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 1em;
+    transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.header-icon:hover{
+    color: deeppink;
+  
+}
+.for-line{
+    border: 1px solid #b3b3b367;
+    margin-top: 1%;
+}
+.call{
+    text-decoration: none;
+    color: gray;
+}
+.dropdown{
+    border: none;
+    
+}
+.active-dd, .flag-icon{
+    color: #b3b3b3;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 0
+    
+}
+.first-banner{
+    background-image: url('https://i.ibb.co/z8x6nsW/slider.jpg');
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    /* background-color: #fafafa; */
+}
+.banner-text{
+    color: white;
+    background-color: #6ec2bc9c;
+    display: inline-block;
+    margin-top: 5em;
+    /* margin-left: 1em; */
+    
+}
+.banner-subtitle{
+    font-size:2em;
+    font-weight: 500;
+}
+.banner-title{
+    font-size: 5em;
+    font-weight: 900;
+}
+.banner-p{
+   font-size: 1.3em;
+}
+.booking-bar{
+    margin-top: 18%;
+}
+.tour-form{
+    padding-bottom: 20px;
+
+}
+.list-item{
+    list-style: none;
+    background-color: #6ec2bc;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-right: 2px solid #00a89d;
+    cursor: pointer;
+    
+    
+}
+.selected{
+    color: #6ec2bc;
+    background-color: #fafafa;
+}
+.tour-form{
+    background-color: #fafafa;
+    font-weight:600 ;
+    border-bottom: 2px solid #00a89d;
+    
+}
+
+.placeholder-form{
+    font-size: 1em;
+    color: rgb(167, 166, 166);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+.date-input{
+    font-size: 0.8em;
+    color: rgb(167, 166, 166);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    
+    border: 1px solid gainsboro;
+    background-color: white;
+    color: #b3b3b3;
+}
+.form-dropdown{
+    border: 1px solid gainsboro;
+    background-color: white;
+    color: #b3b3b3;
+}
+.number-1{
+    color: red;
+}
+.search-div{
+    position:relative;
+}
+
+.search-button{
+    background-color: #00a89d;
+    border: 1px solid #00a89d;
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    
+}
+.title-2{    
+    font-size: 2em;
+    word-spacing: .2;
+    font-family: 'Poppins', sans-serif;
+    color: #474747;
+}
+.best-p{
+    color: #b3b3b3;
+    text-align: center;
+    
+}
+.best-1-grid{text-align: center;
+color: #474747;}
+.best-1-items{
+    color:#a5a5a5
+
+}
+.best-part-icon{
+   font-size: 2em; 
+   color: #474747;
+}
+.best-1-read{
+    color: #d9d9d9;
+    line-height: 0%;
+    
+}
+.vacation-package-add{
+    background-image: url('https://i.ibb.co/GnVmHkh/parallax.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding-bottom: 2em; */
+    min-height: 300px;
+}
+.third-part-text h3{
+    color: #fff799;
+    font-weight: 700;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.third-part-text p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    
+}
+#khazbegi{
+    color: #fff799;
+}
+#dollar{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2em;
+    font-weight: 700;
+
+}
+.third-part-btn button {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #fb000d;
+}
+.review-number{
+    font-size: .8em;
+    color: #cbcbcb;
+}
+.stars{
+    color: goldenrod;
+    font-size: .8em;
+}
+
+
+
+.ship-card button{
+    background-color: #08a89d;
+    border: none;
+    color: white;
+    border: 2px solid #08a89d ;
+    
+}
+.ship-card {
+    background-color: #fafafa;
+    color: #646464;
+    
+}
+.btn-text{
+    font-size: .7em;
+    float: right;
+    font-weight: 600;
+}
+.progress-bar{
+    background-color: #1cbbb4;
+}
+.tour-summary{
+    color: #cbcbcb;
+    color: #750101;
+    color: #015e75;
+    
+}
+.tour-duration{
+    color: #fa0c16;
+    font-weight: 500;
+}
+.happy-customers{
+    background-image: url('https://i.ibb.co/6yXRZSB/happy1.jpg');
+    background-position: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    color: white;
+}
+.happy-1{
+    margin-top: 30%;
+}
+.cus-img{
+    width: 100%;
+}
+.image-logo{
+    /* max-width: 200px; */
+    max-height: 130px;
+}
+.bottom{
+    background-color: #08a89d;
+    min-height: 60px;
+}
+.btm-text{
+    color: white;
+}
+
+@media only screen and (max-width:688px){
+    .topbar{
+        display: none;
+    }
+    .search-button{
+        position:static;
+        bottom: 0;
+        
+    }
+    .happy-customers{
+        padding-bottom: 7%;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:1025px){
+  
+    .top-bar{
+        display: none;
+    }
+}
+/* @media only screen and (min-width:450px) and (max-width:570px){
+  
+    .single-icon{
+        display: none;
+        
+    }
+} */
+/* */

@@ -1,0 +1,30 @@
+.title-3{
+    font-size:  2em;
+    text-align: center;
+    font-weight: 600;
+}
+.our-offer{
+    background-color:#fafafa ;
+    
+}
+.best-2-grid{
+    text-align: start;
+    color: #4d4d4d;
+}
+.best-1-items{
+        color:#b3b3b3;
+    }
+.offer-lists{
+        list-style: none;
+        color:#7b7b7b;
+    }
+.offer-list{
+        line-height: 2.5em;
+    }
+.plain-text{
+        border-left: 3px solid #1cbbb4;
+        height: 50%;
+    }
+.bullet-arrow{
+        color: #1cbbb4;
+    }
